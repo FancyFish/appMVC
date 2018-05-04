@@ -1,0 +1,29 @@
+<ion-view>
+    <ion-content>
+
+        <div class="list card">
+            <DIV class="item item-avatar">
+                <img src="{{ctrl.detalles.fotoURL}}">
+                <h2>{{ctrl.detalles.nombre}}</h2>
+                <p>
+                    Lorem ipsum dolor sit amet,
+                </p>
+            </DIV>
+            <div class="item item-body">
+                <H3>
+                        {{ctrl.detalles.fechaNacimiento}}
+                </H3>
+
+                <p>
+                        {{ctrl.detalles.resumen}}
+                </p>
+                <a href="#" class="subdued">Likes</a>
+                <a href="#" class="subdued">Comment
+                    <b>2</b>
+                </a>
+            </div>
+    </ion-content>
+    <ion-footer-bar >
+        <buttonclass="button button-positive" ng-click="ctrl.goBack()"></button>
+    </ion-footer-bar>
+</ion-view>

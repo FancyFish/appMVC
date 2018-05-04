@@ -21,4 +21,17 @@ angular.module('starter', ['ionic'])
       StatusBar.styleDefault();
     }
   });
-})
+}).config(function($stateProvider,$urlRouterProvider){
+  $stateProvider
+    .state('lista',{
+      url:'/',
+      templateUrl:'views/lista.html',
+      controller: 'listController as ctrl'
+    })
+    .state('detalles',{
+      url:'/detalles/:cantante',
+      templateUrl:'views/detalles.html',
+      controller: 'detailsController as ctrl'
+    });
+    urlRouterProvider.otherwise('/');
+  });

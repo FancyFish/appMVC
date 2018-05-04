@@ -1,0 +1,9 @@
+<ion-view view-title="Hall Of Fame"  >
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat="lista in ctrl.guitarrists" ng-href="#/detalles/{{lista}}">
+                {{lista}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
